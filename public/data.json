@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "employeeId": "a-1",
+        "name": "a",
+        "dob": "7-8-2000",
+        "designation": "sde",
+        "org": "a-b-c",
+        "gender": "male",
+        "timeOfEntry": "10pm"
+    },
+    {
+        "id": 2,
+        "employeeId": "a-2",
+        "name": "b",
+        "dob": "7-8-2004",
+        "designation": "sde",
+        "org": "a-b-c",
+        "gender": "male",
+        "timeOfEntry": "10pm"
+    },
+    {
+        "id": 3,
+        "employeeId": "a-3",
+        "name": "c",
+        "dob": "7-8-2006",
+        "designation": "sde",
+        "org": "a-b-c",
+        "gender": "female",
+        "timeOfEntry": "10pm"
+    },
+    {
+        "id": 4,
+        "employeeId": "a-4",
+        "name": "d",
+        "dob": "7-8-1996",
+        "designation": "junior manager",
+        "org": "a-b-c",
+        "gender": "male",
+        "timeOfEntry": "10pm"
+    },
+    {
+        "id": 5,
+        "employeeId": "a-5",
+        "name": "e",
+        "dob": "7-8-2005",
+        "designation": "manager",
+        "org": "a-b-c",
+        "gender": "male",
+        "timeOfEntry": "10pm"
+    }
+]
