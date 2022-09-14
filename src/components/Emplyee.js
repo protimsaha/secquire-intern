@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useEmployee from '../hooks/useEmployee';
 import './Form.css'
 
@@ -8,6 +8,12 @@ const Emplyee = () => {
     const [employeeData] = useEmployee(searchedName)
     const [searchText, setSearchText] = useState("")
 
+    const navigate = useNavigate()
+
+    const navigator = (id) => {
+        console.log(id)
+        navigate(`/${id}`)
+    }
 
 
     return (
@@ -44,7 +50,7 @@ const Emplyee = () => {
                         }).map((employee, index) => <tr key={employee._id}>
                             <td>{index + 1}</td>
                             <td>{employee.employeeId}</td>
-                            <td>{employee.name}</td>
+                            <td onClick={() => navigator(employee._id)}>{employee.name}</td>
                             <td>{employee.dob}</td>
                             <td>{employee.designation}</td>
                             <td>{employee.org}</td>

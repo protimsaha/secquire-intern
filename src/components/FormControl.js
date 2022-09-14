@@ -53,8 +53,12 @@ const FormControl = () => {
 
         axios.post("http://localhost:5000/employee", employeeForm)
             .then(res => {
-                toast.success(res.data)
+                toast.success("Employee data added successfully")
+                localStorage.setItem("accessToken", res.data.accessToken)
             })
+
+        // .then(data => console.log(data))
+        // console.log(data);
     }
 
     return (
